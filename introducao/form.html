@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrição - IFTech 2025</title>
+  </head>
+  <body>
+    <h1>Formulário de Inscrição - IFTech 2025</h1>
+
+    <form action="#">
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <label>
+          Nome completo: <br />
+          <input type="text" required />
+        </label>
+        <br /><br />
+        <label>
+          E-mail: <br />
+          <input type="email" required />
+        </label>
+        <br /><br />
+        <label>
+          Telefone com DDD: <br />
+          <input type="tel" />
+        </label>
+        <br /><br />
+        <label>
+          Data de nascimento (<i>opcional</i>): <br />
+          <input type="date" />
+        </label>
+        <br /><br />
+        <p>Gênero:</p>
+        <label><input name="genero" value="0" type="radio" />Masculino</label>
+        <label><input name="genero" value="1" type="radio" />Feminino</label>
+        <label><input name="genero" value="2" type="radio" />Outro</label>
+        <label
+          ><input name="genero" value="3" type="radio" />Prefiro não
+          dizer</label
+        >
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Área de Interesse</legend>
+        <label>
+          <input type="checkbox" name="interesse" value="IA" /> Inteligência
+          Artificial
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="interesse" value="DEV_WEB" />
+          Desenvolvimento Web
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="interesse" value="OUTROS" />
+          Outros
+        </label>
+        <br />
+        <label>
+          Como você conheceu o evento?<br />
+          <select name="como_conheceu" required>
+            <option value="">-- Selecione uma opção --</option>
+            <option value="redes_sociais">Redes Sociais</option>
+            <option value="indicacao">Indicação</option>
+            <option value="email_marketing">E-mail marketing</option>
+            <option value="outro">Outro</option>
+          </select>
+        </label>
+        <br />
+        <label>
+          Comentários: <br />
+          <textarea rows="6" cols="40"></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit">Enviar inscrição</button>
+    </form>
+  </body>
+</html>
