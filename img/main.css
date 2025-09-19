@@ -2,15 +2,24 @@
     box-sizing: border-box;
 }
 
-img {
-    width: 400px;
-    height: auto;
-    border: 5px solid #fff;
-    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
-    border-radius: 10px;
+.container-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 32px auto;
+}
+
+.item-galeria {
+    overflow: hidden;
+    border: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0, 0.1);
     transition: transform 0.5s ease;
 }
 
-img:hover {
-    transform: scale(1.05);
+.item-galeria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }

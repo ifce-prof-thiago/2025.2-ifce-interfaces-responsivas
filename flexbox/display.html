@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 10px;
+      }
+
+      .flex-item {
+        border: 1px solid #999;
+        padding: 5px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">Item 01</div>
+      <div class="flex-item">Item 02</div>
+      <div class="flex-item">Item 03</div>
+      <div class="flex-item">Item 04</div>
+      <div class="flex-item">Item 05</div>
+      <div class="flex-item">Item 06</div>
+      <div class="flex-item">Item 07</div>
+    </div>
+  </body>
+</html>
