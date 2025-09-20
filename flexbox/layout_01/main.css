@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    border-bottom: 2px solid rgb(81, 81, 55);
+    background-color: yellow;
+    padding: 10px;
+    height: 60px;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+    background-color: aqua;
+}
+
+.container aside {
+    min-width: 100px;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.container main {
+    width: 100%;
+    padding: 0 10px;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container main section {
+    background-color: red;
+    padding: 10px 0;
+    min-height: calc(100vh - 110px);
+}
+
+.container main footer {
+    background-color: green;
+    padding: 10px 0;
+    height: 40px;
+}

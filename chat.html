@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orkut - A rede social do Google</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #f0f2f5;
+        color: #333;
+      }
+
+      .top-bar {
+        background-color: #3b5998;
+        color: white;
+        padding: 8px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .user-area {
+        display: flex;
+        align-items: center;
+      }
+
+      .user-area span {
+        margin-right: 15px;
+      }
+
+      .main-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+      }
+
+      .sidebar {
+        width: 250px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+      }
+
+      .profile-summary {
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ddd;
+        margin: 0 auto 10px;
+        overflow: hidden;
+      }
+
+      .profile-pic img {
+        width: 100%;
+        height: auto;
+      }
+
+      .menu-item {
+        padding: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        cursor: pointer;
+      }
+
+      .menu-item:hover {
+        background-color: #f5f5f5;
+      }
+
+      .content {
+        flex: 1;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .content-header {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+      }
+
+      .scrap-form {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      .scrap-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        resize: vertical;
+        min-height: 60px;
+        margin-bottom: 10px;
+      }
+
+      .scrap-form button {
+        background-color: #3b5998;
+        color: white;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .scraps-container {
+        margin-top: 20px;
+      }
+
+      .scrap {
+        border-bottom: 1px solid #e5e5e5;
+        padding: 15px 0;
+      }
+
+      .scrap-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .scrap-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ddd;
+        margin-right: 10px;
+      }
+
+      .footer {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+        font-size: 12px;
+        border-top: 1px solid #e5e5e5;
+        margin-top: 30px;
+      }
+
+      .google-brand {
+        color: #4285f4;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="logo">orkut</div>
+      <div class="user-area">
+        <span>Bem-vindo, <strong>Fulano</strong></span>
+        <span>Home</span>
+        <span>Perfil</span>
+        <span>Comunidades</span>
+        <span>Sair</span>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="sidebar">
+        <div class="profile-summary">
+          <div class="profile-pic">
+            <!-- Imagem de perfil ficaria aqui -->
+          </div>
+          <h3>Fulano da Silva</h3>
+          <p>25 anos, São Paulo</p>
+          <p>"A vida é bela!"</p>
+        </div>
+
+        <div class="menu-item">Meu Perfil</div>
+        <div class="menu-item">Amigos</div>
+        <div class="menu-item">Fotos</div>
+        <div class="menu-item">Vídeos</div>
+        <div class="menu-item">Depoimentos</div>
+        <div class="menu-item">Atualizações</div>
+        <div class="menu-item">Comunidades</div>
+        <div class="menu-item">Jogos</div>
+      </div>
+
+      <div class="content">
+        <div class="content-header">
+          <h2>Recados</h2>
+          <p>Deixe um recado para seus amigos</p>
+        </div>
+
+        <div class="scrap-form">
+          <textarea placeholder="Escreva um recado..."></textarea>
+          <button>Enviar Recado</button>
+        </div>
+
+        <div class="scraps-container">
+          <div class="scrap">
+            <div class="scrap-header">
+              <div class="scrap-avatar"></div>
+              <div>
+                <strong>Ciclano</strong>
+                <span> - 2 horas atrás</span>
+              </div>
+            </div>
+            <div class="scrap-content">
+              <p>
+                E aí, beleza? Vamos marcar aquele churrasco no final de semana?
+              </p>
+            </div>
+          </div>
+
+          <div class="scrap">
+            <div class="scrap-header">
+              <div class="scrap-avatar"></div>
+              <div>
+                <strong>Beltrana</strong>
+                <span> - 5 horas atrás</span>
+              </div>
+            </div>
+            <div class="scrap-content">
+              <p>Oi! Adicionei novas fotos da festa, confere lá! 😊</p>
+            </div>
+          </div>
+
+          <div class="scrap">
+            <div class="scrap-header">
+              <div class="scrap-avatar"></div>
+              <div>
+                <strong>Maria</strong>
+                <span> - 1 dia atrás</span>
+              </div>
+            </div>
+            <div class="scrap-content">
+              <p>Feliz aniversário! Muitas felicidades! 🎂🎉</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 <span class="google-brand">Google</span> - Orkut</p>
+      <p>Sobre o Orkut - Centro de segurança - Privacidade - Termos</p>
+    </div>
+  </body>
+</html>
